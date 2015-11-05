@@ -1,6 +1,6 @@
 cask :v1 => 'rust' do
-  version '1.0.0-beta.3'
-  sha256 '1c6a3027efab9eee02a4a0cfc1552435f9c5e4a2f1da3d3292df2a900ed6fde2'
+  version '1.3.0'
+  sha256 '26dfc4ec42b89aaac4d5db1bbb688e22fe6a276dc40e8c7c6da795b61b6d3ffa'
 
   url "https://static.rust-lang.org/dist/rust-#{version}-x86_64-apple-darwin.pkg"
   name 'Rust'

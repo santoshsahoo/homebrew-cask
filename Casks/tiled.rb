@@ -1,6 +1,6 @@
 cask :v1 => 'tiled' do
-  version '0.11.0'
-  sha256 '82d9c33f02b1f048807e55728331e1c94c92a9cd3cb83d1bc6dc89cf7655e1be'
+  version '0.14.2'
+  sha256 'ee8c7f3bba284d3fe5fa89cfe313f60bdd20e1386f08ed2649b60cb9159d268a'
 
   # github.com is the official download host per the vendor homepage
   url "https://github.com/bjorn/tiled/releases/download/v#{version}/tiled-#{version}.dmg"

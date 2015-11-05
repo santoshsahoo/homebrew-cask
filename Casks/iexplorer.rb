@@ -1,13 +1,15 @@
 cask :v1 => 'iexplorer' do
-  version '3.6.6.0'
-  sha256 '023816dcce85458754cecbd935e0bee9638868936a71795a8956687c0d5dcfae'
+  version '3.8.4.0'
+  sha256 '49bc892e6c6ea8f932998e6bcf1ea0dc564d07f77ca364fa1b812a61f5cd5dcd'
 
-  url "http://cdn.macroplant.com/release/iExplorer-#{version}.dmg"
-  appcast 'http://www.macroplant.com/iexplorer/ie3-appcast.xml',
-          :sha256 => 'd5a2ea8f6072e499a2cbed60dbae5952c7bc5a7ea3fa6fc79549c0033e77f84c'
+  url "https://www.macroplant.com/release/iExplorer-#{version}.dmg"
+  appcast 'https://www.macroplant.com/iexplorer/ie3-appcast.xml',
+          :sha256 => '1f78bbb1181e2c318c7f1e5c1d8a75a79110248346918cc9e9b739b696eec24d'
   name 'iExplorer'
-  homepage 'http://www.macroplant.com/iexplorer/'
+  homepage 'https://www.macroplant.com/iexplorer/'
   license :freemium
+
+  depends_on :macos => '>= :snow_leopard'
 
   app 'iExplorer.app'
 end

@@ -1,11 +1,11 @@
 cask :v1 => 'nomachine' do
-  version '4.5.0_1'
-  sha256 '95cea2de7eae19350547ac77ee1e3eb8c5160426ae50a3097c4fa9cb685624f9'
+  version '5.0.47_1'
+  sha256 'c68db4d516809c6e05bbd9d9a500227b14dcbfdcc3d281a17a69fe9401885871'
 
   url "http://download.nomachine.com/download/#{version.split('.')[0..1].join('.')}/MacOSX/nomachine_#{version}.dmg"
   name 'NoMachine'
-  homepage 'http://www.nomachine.com'
-  license :unknown    # todo: change license and remove this comment; ':unknown' is a machine-generated placeholder
+  homepage 'https://www.nomachine.com/'
+  license :gratis
 
   pkg 'NoMachine.pkg'
   # a launchctl job ordinarily manages uninstall once the app bundle is removed

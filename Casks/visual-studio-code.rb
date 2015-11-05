@@ -1,8 +1,9 @@
 cask :v1 => 'visual-studio-code' do
-  version :latest
-  sha256 :no_check
+  version '0.9.2'
+  sha256 'edc7eb85c1579df7f16045850073c9c9441c2f458a1a6bbf432fa0aeeaecc08a'
 
-  url 'http://download.microsoft.com/download/0/D/5/0D57186C-834B-463A-AECB-BC55A8E466AE/VSCode-osx.zip'
+  # vo.msecnd.net is the official download host per the vendor homepage
+  url "https://az764295.vo.msecnd.net/public/#{version}/VSCode-darwin.zip"
   name 'Visual Studio Code'
   homepage 'https://code.visualstudio.com/'
   license :gratis

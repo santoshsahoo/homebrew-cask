@@ -1,11 +1,11 @@
 cask :v1 => 'dbeaver-community' do
-  version '3.3.2'
+  version '3.4.5'
 
   if Hardware::CPU.is_32_bit?
-    sha256 '540a8e571bf759d84bea1e7ed1b032c8b1994fda13b09d2c2a2e62c4acfb8af5'
+    sha256 'fa6271e62cd7050063d263578d9d06a70834f8c0a699f3d51d2e31b922976dc6'
     url "http://dbeaver.jkiss.org/files/dbeaver-#{version}-macosx.cocoa.x86.zip"
   else
-    sha256 '1978e7c437dca237f6a21237f271b410d65c49d4b584bf87e4423c0d0e140c2e'
+    sha256 '5bd5476e32ee17b78127b72ab686ad4f770f0793e9378a016f999de23c725a34'
     url "http://dbeaver.jkiss.org/files/dbeaver-#{version}-macosx.cocoa.x86_64.zip"
   end
 

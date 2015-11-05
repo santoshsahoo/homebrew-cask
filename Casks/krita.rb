@@ -1,9 +1,9 @@
 cask :v1 => 'krita' do
-  version '2.9.0.0'
-  sha256 'f7a30e808ebb9b781a146d2491d1b9cfb07d39db805867da63252e61d73a2ad0'
+  version '2.9.8.0'
+  sha256 'b07db99ca2bcdeb21c8d84dc17832ef7850be8008113184605c4bfbc33b9520f'
 
-  # download dmg from kde official repository
-  url "http://download.kde.org/stable/krita/krita-#{version}.dmg"
+  # kde.org is the official download host per the vendor homepage
+  url "http://files.kde.org/krita/osx/krita-#{version}.dmg"
   name 'Krita'
   homepage 'https://krita.org/'
   license :gpl

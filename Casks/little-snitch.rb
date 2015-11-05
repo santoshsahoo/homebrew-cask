@@ -1,10 +1,10 @@
 cask :v1 => 'little-snitch' do
-  version '3.5.2'
-  sha256 'bf88a0fe00550367e86acc7d02d508a45c3c5623eb75daadce32ddf74e14bec8'
+  version '3.6'
+  sha256 'f33bf45f975ebdd5034ad5e53a65469377ace557492ea752098ba7ad0c09a07a'
 
   url "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-#{version}.dmg"
   name 'Little Snitch'
-  homepage 'http://www.obdev.at/products/littlesnitch/'
+  homepage 'https://www.obdev.at/products/littlesnitch/'
   license :commercial
 
   installer :manual => 'Little Snitch Installer.app'

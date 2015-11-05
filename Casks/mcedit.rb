@@ -1,11 +1,11 @@
 cask :v1 => 'mcedit' do
-  version '1.2.5.0'
-  sha256 '2932e5c96c2d3d9ec77b3b71a2e4596f5f96edd820e316921dfedcfe72bafc5c'
+  version '1.4.0.1'
+  sha256 'e09c7efab389cdb8dfe4bcc74fd452aa9681cc7fb1d98756c922fbe28fd82122'
 
   url "https://github.com/Khroki/MCEdit-Unified/releases/download/#{version}/MCEdit.v#{version}.OSX.64bit.zip"
   appcast 'https://github.com/Khroki/MCEdit-Unified/releases.atom'
   name 'MCEdit-Unified'
-  homepage 'http://khroki.github.io/MCEdit-Unified/'
+  homepage 'https://khroki.github.io/MCEdit-Unified/'
   license :mit
 
   app 'mcedit.app'

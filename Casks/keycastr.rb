@@ -1,10 +1,9 @@
 cask :v1 => 'keycastr' do
-  version '0.8.2-bezel'
-  sha256 '4b613caf54e474c3b5a6ad802252787ce0b3c3451b5777c7a66214bd0bb53905'
+  version 'v0.9.0'
+  sha256 '001607825b0e2115591b6f40b5700649cc33bfda6a077c4b88ef088a7c0d9546'
 
-  # github.com/lqez is the official download host per the vendor homepage
-  url "https://github.com/lqez/keycastr/releases/download/#{version}/KeyCastr.zip"
-  appcast 'https://github.com/lqez/keycastr/releases.atom'
+  url "https://github.com/keycastr/keycastr/releases/download/#{version}/KeyCastr.app.zip"
+  appcast 'https://github.com/keycastr/keycastr/releases.atom'
   name 'KeyCastr'
   homepage 'https://github.com/keycastr/keycastr'
   license :bsd

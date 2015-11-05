@@ -1,29 +1,18 @@
 cask :v1 => 'intellij-idea-ce' do
-  version '14.1.2'
-  sha256 'b64046ccad04a45c6f8c1df7677930aa710f5c6c32d9fe521554cb1e2a9f340b'
+  version '15.0'
+  sha256 'e9d0f479e692463cda6ab81deda93d4145fb01968bb802a0d7be35e3e0eee73d'
 
-  url "http://download.jetbrains.com/idea/ideaIC-#{version}.dmg"
+  url "https://download.jetbrains.com/idea/ideaIC-#{version}-custom-jdk-bundled.dmg"
   name 'IntelliJ IDEA Community Edition'
   homepage 'https://www.jetbrains.com/idea/'
   license :apache
 
-  app 'IntelliJ IDEA 14 CE.app'
+  app 'IntelliJ IDEA 15 CE.app'
 
   zap :delete => [
-                  '~/Library/Application Support/IdeaIC14',
-                  '~/Library/Preferences/IdeaIC14',
-                  '~/Library/Caches/IdeaIC14',
-                  '~/Library/Logs/IdeaIC14',
+                  '~/Library/Application Support/IdeaIC15',
+                  '~/Library/Preferences/IdeaIC15',
+                  '~/Library/Caches/IdeaIC15',
+                  '~/Library/Logs/IdeaIC15',
                  ]
-
-  caveats <<-EOS.undent
-    #{token} requires Java 6 like any other IntelliJ-based IDE.
-    You can install it with
-
-      brew cask install caskroom/homebrew-versions/java6
-
-    The vendor (JetBrains) doesn't support newer versions of Java (yet)
-    due to several critical issues, see details at
-    https://intellij-support.jetbrains.com/entries/27854363
-  EOS
 end

@@ -1,6 +1,6 @@
 cask :v1 => 'mpv' do
-  version '0.7.3'
-  sha256 'f9197330ebe25954dd35fdb2c0139ff293b9adac3b0def7ce587822fc84aa2ff'
+  version '0.12.0'
+  sha256 '3f78b1cab4f53d6098c4cfb614ac0cf211700c52b0d02e0d378151c534824f1f'
 
   # github.com is the official download host per the vendor homepage
   url "https://github.com/mpv-player/mpv/releases/download/v#{version}/mpv_#{version}_mac.tar.bz2"

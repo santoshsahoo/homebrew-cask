@@ -1,6 +1,6 @@
 cask :v1 => 'julia' do
-  version '0.3.7'
-  sha256 'f83e42c42539518adc639b38a62bb7f0f31e3bfa879e5d43b688f06082556a8c'
+  version '0.4.0'
+  sha256 '39a2765c7a0e03d798d3cfcce2ca265a1e612a9d8108a87315b040b14f2debff'
 
   # amazonaws.com is the official download host per the vendor homepage
   url "https://s3.amazonaws.com/julialang/bin/osx/x64/#{version.sub(/\.\d+$/, '')}/julia-#{version}-osx10.7+.dmg"
@@ -11,7 +11,7 @@ cask :v1 => 'julia' do
   app "Julia-#{version}.app"
   binary "Julia-#{version}.app/Contents/Resources/julia/bin/julia"
 
-  depends_on :macos => '>= 10.7'
+  depends_on :macos => '>= :lion'
 
   zap :delete => '~/.julia'
 end

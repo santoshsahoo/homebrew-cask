@@ -1,6 +1,6 @@
 cask :v1 => 'navicat-premium' do
-  version '11.1.12'   # navicat-premium.rb and navicat-for-* should be upgraded together
-  sha256 'f0d5f93972bd39e9a174d70f897c14afeda17db7390b15de2c417e48084b2ccf'
+  version '11.1.15'
+  sha256 'c1ba91359da1da4c1a8ebc437abf62c14b03d94e843bb04a76d30c19cb840e39'
 
   url "http://download.navicat.com/download/navicat#{version.sub(%r{^(\d+)\.(\d+).*},'\1\2')}_premium_en.dmg"
   name 'Navicat Premium'

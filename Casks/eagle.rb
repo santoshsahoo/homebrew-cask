@@ -1,15 +1,15 @@
 cask :v1 => 'eagle' do
-  version '7.2.0'
-  sha256 '9cae311072d8be5a16631ce08d9e0653bdc21e336cc90df2463d7df35521ff2a'
+  version '7.4.0'
+  sha256 '11aa7b6fc7bf9fce2e88f0cfca15b821404e42b03e9a8529c9c0b5c2781e9133'
 
   # cadsoft.de is the official download host per the vendor homepage
-  url "http://web.cadsoft.de/ftp/eagle/program/#{version.sub(%r{\.\d+$},'')}/eagle-mac-#{version}.zip"
+  url "http://web.cadsoft.de/ftp/eagle/program/#{version.sub(%r{\.\d+$},'')}/eagle-mac64-#{version}.zip"
   name 'EAGLE'
   homepage 'http://www.cadsoftusa.com/'
-  license :unknown    # todo: change license and remove this comment; ':unknown' is a machine-generated placeholder
+  license :freemium
   tags :vendor => 'CadSoft'
 
-  pkg "eagle-#{version}.pkg"
+  pkg "eagle-mac64-#{version}.pkg"
 
   uninstall :pkgutil => 'com.CadSoftComputerGmbH.EAGLE',
             :delete => "/Applications/EAGLE-#{version}"

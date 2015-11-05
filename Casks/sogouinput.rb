@@ -1,12 +1,12 @@
 cask :v1 => 'sogouinput' do
-  version '3.0.2.59116'
-  sha256 '51df347ed60ea13bb39dd89ec5fc9eb6cd549f0080d9f94d97a7e0502b0edb0c'
+  version '3.3.0.74249'
+  sha256 'b9d80a202f5c7143ea7640015d9d73cf67b5e379f296af9f8c406edb233873c7'
 
-  url 'http://download.ime.sogou.com/1411725208/sogou_mac_30a.dmg'
+  url 'http://download.ime.sogou.com/1443062217/sogou_mac_33d.dmg'
   name '搜狗输入法'
   name 'Sogou Input Method'
   homepage 'http://pinyin.sogou.com/mac/'
-  license :unknown    # todo: change license and remove this comment; ':unknown' is a machine-generated placeholder
+  license :gratis
 
   installer :manual => '安装搜狗输入法.app'
 

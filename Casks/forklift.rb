@@ -1,10 +1,10 @@
 cask :v1 => 'forklift' do
-  version '2.6.4'
-  sha256 'b32b831214943033f3322c37113b4e9b65efb51136280ce6a279b608f72342b7'
+  version '2.6.6'
+  sha256 '0fa2bb7927d07c0c13b964b517b500ea6a77a6a569becba3ea392b2f82c05fce'
 
   url "http://download.binarynights.com/ForkLift#{version}.zip"
   appcast 'http://update.binarynights.com/ForkLift2/update.xml',
-          :sha256 => '1641b37355845f454c6c6d9ecc8565d6bc14720b68a8665c0bdde0ff6616aec0'
+          :sha256 => '06635ed48d05ac9318bcb2f527d848934f7bf32f173cc9aa1a1ee6bbc6c98443'
   name 'ForkLift'
   homepage 'http://www.binarynights.com/'
   license :commercial

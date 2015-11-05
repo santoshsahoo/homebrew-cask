@@ -1,6 +1,6 @@
 cask :v1 => 'qgis' do
-  version '2.8.1-1'
-  sha256 'cd6d3ebd779ee6801807fe4d54a77654ed430dd275f4a084a5d11cf67f1b26c4'
+  version '2.12.0-1'
+  sha256 'b398f12904f7762ee74a1d9ddebd1fd44eef85007488320dcd4899aebefc6089'
 
   url "http://www.kyngchaos.com/files/software/qgis/QGIS-#{version}.dmg"
   name 'QGIS'
@@ -11,5 +11,5 @@ cask :v1 => 'qgis' do
   uninstall :pkgutil => 'org.qgis.qgis-*'
 
   depends_on :cask => 'gdal-framework'
-  depends_on :cask => 'matplotlib'
+  depends_on :formula => 'matplotlib'
 end
